@@ -7,9 +7,9 @@ path = 'data/raw/training/*.psv'
 all_files = glob.glob(path)
 
 if not all_files:
-    print("❌ Still can't find the files. Check if the folder name is exactly 'training'.")
+    print("Error: Still can't find the files. Check if the folder name is exactly 'training'.")
 else:
-    print(f"✅ Found {len(all_files)} patient records!")
+    print(f"Success: Found {len(all_files)} patient records!")
 
     # 2. Load the very first patient file
     # Use sep='|' because PSV stands for Pipe Separated Values
