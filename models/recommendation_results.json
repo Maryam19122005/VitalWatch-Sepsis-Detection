@@ -1,0 +1,30 @@
+{
+  "total_patients_indexed": 20335,
+  "k_neighbors": 10,
+  "similarity_features": [
+    "avg_hr",
+    "avg_temp",
+    "avg_o2sat",
+    "avg_sbp",
+    "avg_map",
+    "avg_resp",
+    "max_qsofa",
+    "had_tachy",
+    "had_fever",
+    "had_low_bp",
+    "had_hypoxia",
+    "total_icu_hours"
+  ],
+  "metric": "euclidean",
+  "risk_thresholds": {
+    "HIGH": "5+ out of 10 similar patients had sepsis",
+    "MODERATE": "2-4 out of 10 similar patients had sepsis",
+    "LOW": "0-1 out of 10 similar patients had sepsis"
+  },
+  "test_result": {
+    "sepsis_count": 4,
+    "risk_pct": 40,
+    "risk_level": "MODERATE RISK",
+    "recommendation": "Increase monitoring frequency to every 30 minutes"
+  }
+}

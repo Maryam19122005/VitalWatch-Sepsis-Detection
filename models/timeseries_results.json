@@ -1,0 +1,21 @@
+{
+  "window_size": 6,
+  "target_column": "hr",
+  "total_sequences": 668161,
+  "best_model": "XGBoost TS",
+  "best_rmse": 6.9424,
+  "all_models": {
+    "Linear Trend": {
+      "RMSE": 6.9454,
+      "MAE": 4.6476
+    },
+    "Exp Smoothing": {
+      "RMSE": 7.3688,
+      "MAE": 5.0283
+    },
+    "XGBoost TS": {
+      "RMSE": 6.9424,
+      "MAE": 4.6304
+    }
+  }
+}

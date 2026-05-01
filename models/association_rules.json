@@ -1,0 +1,1287 @@
+{
+  "total_transactions": 4128,
+  "frequent_itemsets": 99,
+  "total_rules": 98,
+  "sepsis_rules_count": 0,
+  "min_support": 0.05,
+  "min_confidence": 0.5,
+  "min_lift": 1.0,
+  "all_rules": [
+    {
+      "antecedents": [
+        "FEVER"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.0504,
+      "confidence": 0.9765,
+      "lift": 1.0075
+    },
+    {
+      "antecedents": [
+        "HIGH_HR"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.1914,
+      "confidence": 0.8827,
+      "lift": 1.0595
+    },
+    {
+      "antecedents": [
+        "HIGH_RESP"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.2108,
+      "confidence": 0.8382,
+      "lift": 1.0061
+    },
+    {
+      "antecedents": [
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1306,
+      "confidence": 0.7823,
+      "lift": 1.0658
+    },
+    {
+      "antecedents": [
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.1262,
+      "confidence": 0.7562,
+      "lift": 1.0102
+    },
+    {
+      "antecedents": [
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.8086,
+      "confidence": 0.9706,
+      "lift": 1.0014
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.8086,
+      "confidence": 0.8343,
+      "lift": 1.0014
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.7054,
+      "confidence": 0.8334,
+      "lift": 1.0004
+    },
+    {
+      "antecedents": [
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.7054,
+      "confidence": 0.8468,
+      "lift": 1.0004
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.7158,
+      "confidence": 0.9752,
+      "lift": 1.0062
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.7158,
+      "confidence": 0.7386,
+      "lift": 1.0062
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.5717,
+      "confidence": 0.7638,
+      "lift": 1.0405
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.5717,
+      "confidence": 0.7789,
+      "lift": 1.0405
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.6315,
+      "confidence": 0.7461,
+      "lift": 1.0165
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.6315,
+      "confidence": 0.8604,
+      "lift": 1.0165
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.7289,
+      "confidence": 0.9738,
+      "lift": 1.0047
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.7289,
+      "confidence": 0.7521,
+      "lift": 1.0047
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.8207,
+      "confidence": 0.9697,
+      "lift": 1.0004
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.8207,
+      "confidence": 0.8468,
+      "lift": 1.0004
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.6427,
+      "confidence": 0.8586,
+      "lift": 1.0144
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.6427,
+      "confidence": 0.7593,
+      "lift": 1.0144
+    },
+    {
+      "antecedents": [
+        "HIGH_HR",
+        "HIGH_RESP"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.0715,
+      "confidence": 0.8501,
+      "lift": 1.0205
+    },
+    {
+      "antecedents": [
+        "HIGH_HR",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.1822,
+      "confidence": 0.8857,
+      "lift": 1.0632
+    },
+    {
+      "antecedents": [
+        "HIGH_HR"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN",
+        "NORMAL_BP"
+      ],
+      "support": 0.1822,
+      "confidence": 0.8402,
+      "lift": 1.0391
+    },
+    {
+      "antecedents": [
+        "HIGH_HR",
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.1199,
+      "confidence": 0.9033,
+      "lift": 1.0843
+    },
+    {
+      "antecedents": [
+        "HIGH_HR",
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.156,
+      "confidence": 0.8822,
+      "lift": 1.0589
+    },
+    {
+      "antecedents": [
+        "HIGH_HR"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_BP"
+      ],
+      "support": 0.156,
+      "confidence": 0.7196,
+      "lift": 1.02
+    },
+    {
+      "antecedents": [
+        "HIGH_HR",
+        "SEPSIS"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.0567,
+      "confidence": 0.8864,
+      "lift": 1.0639
+    },
+    {
+      "antecedents": [
+        "HIGH_RESP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.2008,
+      "confidence": 0.8357,
+      "lift": 1.0031
+    },
+    {
+      "antecedents": [
+        "SEPSIS",
+        "HIGH_RESP"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.0831,
+      "confidence": 0.8684,
+      "lift": 1.0423
+    },
+    {
+      "antecedents": [
+        "HYPOTHERMIA",
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.0724,
+      "confidence": 0.9771,
+      "lift": 1.0081
+    },
+    {
+      "antecedents": [
+        "HYPOTHERMIA",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.0724,
+      "confidence": 0.7383,
+      "lift": 1.0058
+    },
+    {
+      "antecedents": [
+        "HYPOTHERMIA",
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.0577,
+      "confidence": 0.7778,
+      "lift": 1.0596
+    },
+    {
+      "antecedents": [
+        "HYPOTHERMIA",
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.0577,
+      "confidence": 0.7778,
+      "lift": 1.0391
+    },
+    {
+      "antecedents": [
+        "HYPOTHERMIA",
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.0719,
+      "confidence": 0.9706,
+      "lift": 1.0014
+    },
+    {
+      "antecedents": [
+        "LOW_BP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1262,
+      "confidence": 0.7858,
+      "lift": 1.0706
+    },
+    {
+      "antecedents": [
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_HR",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.1262,
+      "confidence": 0.7562,
+      "lift": 1.0563
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1034,
+      "confidence": 0.8196,
+      "lift": 1.1166
+    },
+    {
+      "antecedents": [
+        "LOW_BP",
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.1034,
+      "confidence": 0.7922,
+      "lift": 1.0583
+    },
+    {
+      "antecedents": [
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_HR"
+      ],
+      "support": 0.1034,
+      "confidence": 0.6197,
+      "lift": 1.084
+    },
+    {
+      "antecedents": [
+        "LOW_BP",
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1107,
+      "confidence": 0.7852,
+      "lift": 1.0698
+    },
+    {
+      "antecedents": [
+        "LOW_BP",
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.1107,
+      "confidence": 0.8479,
+      "lift": 1.0017
+    },
+    {
+      "antecedents": [
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_HR"
+      ],
+      "support": 0.1107,
+      "confidence": 0.6633,
+      "lift": 1.0503
+    },
+    {
+      "antecedents": [
+        "LOW_BP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.1211,
+      "confidence": 0.7541,
+      "lift": 1.0075
+    },
+    {
+      "antecedents": [
+        "LOW_BP",
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.1059,
+      "confidence": 0.7509,
+      "lift": 1.0031
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.5896,
+      "confidence": 0.9771,
+      "lift": 1.0081
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_HR",
+        "NORMAL_BP"
+      ],
+      "support": 0.5896,
+      "confidence": 0.6083,
+      "lift": 1.0081
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.4683,
+      "confidence": 0.7524,
+      "lift": 1.0251
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.4683,
+      "confidence": 0.776,
+      "lift": 1.0367
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_HR",
+        "NORMAL_BP"
+      ],
+      "support": 0.4683,
+      "confidence": 0.6256,
+      "lift": 1.0367
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_BP"
+      ],
+      "support": 0.4683,
+      "confidence": 0.638,
+      "lift": 1.0251
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.5208,
+      "confidence": 0.7383,
+      "lift": 1.0059
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.5208,
+      "confidence": 0.8631,
+      "lift": 1.0197
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_HR",
+        "NORMAL_BP"
+      ],
+      "support": 0.5208,
+      "confidence": 0.6153,
+      "lift": 1.0197
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_BP"
+      ],
+      "support": 0.5208,
+      "confidence": 0.7096,
+      "lift": 1.0059
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6078,
+      "confidence": 0.9766,
+      "lift": 1.0076
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.6078,
+      "confidence": 0.7516,
+      "lift": 1.0041
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.6078,
+      "confidence": 0.8338,
+      "lift": 1.0009
+    },
+    {
+      "antecedents": [
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6078,
+      "confidence": 0.7296,
+      "lift": 1.0009
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN",
+        "NORMAL_BP"
+      ],
+      "support": 0.6078,
+      "confidence": 0.812,
+      "lift": 1.0041
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_BP"
+      ],
+      "support": 0.6078,
+      "confidence": 0.6271,
+      "lift": 1.0076
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6851,
+      "confidence": 0.9712,
+      "lift": 1.002
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.6851,
+      "confidence": 0.8472,
+      "lift": 1.0009
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.6851,
+      "confidence": 0.8347,
+      "lift": 1.0019
+    },
+    {
+      "antecedents": [
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6851,
+      "confidence": 0.8223,
+      "lift": 1.0019
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN",
+        "NORMAL_BP"
+      ],
+      "support": 0.6851,
+      "confidence": 0.8094,
+      "lift": 1.0009
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_BP"
+      ],
+      "support": 0.6851,
+      "confidence": 0.7068,
+      "lift": 1.002
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.5368,
+      "confidence": 0.8353,
+      "lift": 1.0026
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.5368,
+      "confidence": 0.8626,
+      "lift": 1.0191
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP",
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.5368,
+      "confidence": 0.761,
+      "lift": 1.0166
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_BP"
+      ],
+      "support": 0.5368,
+      "confidence": 0.7172,
+      "lift": 1.0166
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_BP"
+      ],
+      "support": 0.5368,
+      "confidence": 0.6342,
+      "lift": 1.0191
+    },
+    {
+      "antecedents": [
+        "NORMAL_BP"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_TEMP"
+      ],
+      "support": 0.5368,
+      "confidence": 0.6444,
+      "lift": 1.0026
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.5596,
+      "confidence": 0.9788,
+      "lift": 1.0099
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.5596,
+      "confidence": 0.7677,
+      "lift": 1.0459
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.5596,
+      "confidence": 0.7817,
+      "lift": 1.0443
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_HR",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.5596,
+      "confidence": 0.7476,
+      "lift": 1.0443
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.5596,
+      "confidence": 0.7624,
+      "lift": 1.0459
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_HR"
+      ],
+      "support": 0.5596,
+      "confidence": 0.5774,
+      "lift": 1.0099
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP",
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6153,
+      "confidence": 0.9743,
+      "lift": 1.0052
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.6153,
+      "confidence": 0.7497,
+      "lift": 1.0214
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.6153,
+      "confidence": 0.8596,
+      "lift": 1.0155
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_HR",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6153,
+      "confidence": 0.727,
+      "lift": 1.0155
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6153,
+      "confidence": 0.8383,
+      "lift": 1.0214
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_HR"
+      ],
+      "support": 0.6153,
+      "confidence": 0.6348,
+      "lift": 1.0052
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.4952,
+      "confidence": 0.7704,
+      "lift": 1.0496
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.4952,
+      "confidence": 0.8661,
+      "lift": 1.0233
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP",
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.4952,
+      "confidence": 0.784,
+      "lift": 1.0474
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_HR"
+      ],
+      "support": 0.4952,
+      "confidence": 0.6615,
+      "lift": 1.0474
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_HR"
+      ],
+      "support": 0.4952,
+      "confidence": 0.585,
+      "lift": 1.0233
+    },
+    {
+      "antecedents": [
+        "NORMAL_HR"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_TEMP"
+      ],
+      "support": 0.4952,
+      "confidence": 0.6746,
+      "lift": 1.0496
+    },
+    {
+      "antecedents": [
+        "SEPSIS",
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1143,
+      "confidence": 0.741,
+      "lift": 1.0095
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6265,
+      "confidence": 0.9747,
+      "lift": 1.0057
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_TEMP"
+      ],
+      "support": 0.6265,
+      "confidence": 0.8594,
+      "lift": 1.0154
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_RESP"
+      ],
+      "support": 0.6265,
+      "confidence": 0.7633,
+      "lift": 1.0197
+    },
+    {
+      "antecedents": [
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_TEMP",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6265,
+      "confidence": 0.8369,
+      "lift": 1.0197
+    },
+    {
+      "antecedents": [
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_OXYGEN"
+      ],
+      "support": 0.6265,
+      "confidence": 0.7401,
+      "lift": 1.0154
+    },
+    {
+      "antecedents": [
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_TEMP"
+      ],
+      "support": 0.6265,
+      "confidence": 0.6463,
+      "lift": 1.0057
+    }
+  ],
+  "sepsis_rules": [],
+  "top_10_by_lift": [
+    {
+      "antecedents": [
+        "NORMAL_RESP",
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1034,
+      "confidence": 0.8196,
+      "lift": 1.1166
+    },
+    {
+      "antecedents": [
+        "HIGH_HR",
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.1199,
+      "confidence": 0.9033,
+      "lift": 1.0843
+    },
+    {
+      "antecedents": [
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_RESP",
+        "NORMAL_HR"
+      ],
+      "support": 0.1034,
+      "confidence": 0.6197,
+      "lift": 1.084
+    },
+    {
+      "antecedents": [
+        "LOW_BP",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1262,
+      "confidence": 0.7858,
+      "lift": 1.0706
+    },
+    {
+      "antecedents": [
+        "LOW_BP",
+        "NORMAL_TEMP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1107,
+      "confidence": 0.7852,
+      "lift": 1.0698
+    },
+    {
+      "antecedents": [
+        "LOW_BP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.1306,
+      "confidence": 0.7823,
+      "lift": 1.0658
+    },
+    {
+      "antecedents": [
+        "HIGH_HR",
+        "SEPSIS"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.0567,
+      "confidence": 0.8864,
+      "lift": 1.0639
+    },
+    {
+      "antecedents": [
+        "HIGH_HR",
+        "NORMAL_OXYGEN"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.1822,
+      "confidence": 0.8857,
+      "lift": 1.0632
+    },
+    {
+      "antecedents": [
+        "HYPOTHERMIA",
+        "NORMAL_RESP"
+      ],
+      "consequents": [
+        "NORMAL_HR"
+      ],
+      "support": 0.0577,
+      "confidence": 0.7778,
+      "lift": 1.0596
+    },
+    {
+      "antecedents": [
+        "HIGH_HR"
+      ],
+      "consequents": [
+        "NORMAL_BP"
+      ],
+      "support": 0.1914,
+      "confidence": 0.8827,
+      "lift": 1.0595
+    }
+  ]
+}

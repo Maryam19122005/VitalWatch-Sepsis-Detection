@@ -1,0 +1,143 @@
+{
+  "trained_at": "2026-05-01T14:52:00.500978",
+  "train_rows": 615868,
+  "test_rows": 153968,
+  "class_imbalance_ratio": 49,
+  "feature_columns": [
+    "hr",
+    "o2sat",
+    "temp",
+    "sbp",
+    "map",
+    "dbp",
+    "resp",
+    "age",
+    "gender",
+    "hr_mean_3h",
+    "hr_mean_6h",
+    "sbp_mean_3h",
+    "map_mean_3h",
+    "resp_mean_3h",
+    "hr_trend",
+    "sbp_trend",
+    "temp_trend",
+    "resp_trend",
+    "hr_std_3h",
+    "sbp_std_3h",
+    "flag_tachy",
+    "flag_hypoxia",
+    "flag_fever",
+    "flag_hypotemp",
+    "flag_low_bp",
+    "flag_tachypnea",
+    "qsofa",
+    "hours_in_icu"
+  ],
+  "classification": {
+    "best_model": "Logistic Regression",
+    "best_medical_score": 0.6524,
+    "selection_criteria": "60% sepsis recall + 40% AUROC",
+    "all_results": {
+      "Logistic Regression": {
+        "AUROC": 0.7267,
+        "F1": 0.0888,
+        "Accuracy": 0.7507,
+        "Sepsis_Recall": 0.603,
+        "Medical_Score": 0.6524
+      },
+      "Random Forest": {
+        "AUROC": 0.7321,
+        "F1": 0.1615,
+        "Accuracy": 0.9458,
+        "Sepsis_Recall": 0.2591,
+        "Medical_Score": 0.4483
+      },
+      "XGBoost": {
+        "AUROC": 0.7465,
+        "F1": 0.1226,
+        "Accuracy": 0.8532,
+        "Sepsis_Recall": 0.5089,
+        "Medical_Score": 0.6039
+      },
+      "Gradient Boosting": {
+        "AUROC": 0.7656,
+        "F1": 0.1202,
+        "Accuracy": 0.8331,
+        "Sepsis_Recall": 0.5656,
+        "Medical_Score": 0.6456
+      }
+    }
+  },
+  "regression": {
+    "target": "next_hour_hr",
+    "best_model": "XGBoost",
+    "best_rmse": 6.9032,
+    "all_results": {
+      "Ridge Regression": {
+        "RMSE": 6.9059,
+        "MAE": 4.606,
+        "R2": 0.8364
+      },
+      "Random Forest": {
+        "RMSE": 7.008,
+        "MAE": 4.7332,
+        "R2": 0.8316
+      },
+      "XGBoost": {
+        "RMSE": 6.9032,
+        "MAE": 4.5972,
+        "R2": 0.8366
+      }
+    }
+  },
+  "clustering": {
+    "algorithm": "KMeans",
+    "n_clusters": 4,
+    "risk_labels": {
+      "3": "Stable Low Risk",
+      "2": "Elevated Risk",
+      "0": "High Risk - Sepsis Likely",
+      "1": "Critical - Immediate Attention"
+    },
+    "cluster_sepsis_rates": {
+      "0": 0.031,
+      "1": 0.032,
+      "2": 0.024,
+      "3": 0.013
+    }
+  },
+  "dimensionality_reduction": {
+    "algorithm": "PCA",
+    "n_components": 2,
+    "variance_explained": {
+      "PC1": 0.1516,
+      "PC2": 0.1389,
+      "total": 0.2905
+    },
+    "components_for_80pct": 14,
+    "components_for_95pct": 19,
+    "pc1_top_features": [
+      "hr",
+      "hr_mean_3h",
+      "hr_mean_6h",
+      "flag_tachy",
+      "resp"
+    ],
+    "pc2_top_features": [
+      "map",
+      "map_mean_3h",
+      "sbp",
+      "sbp_mean_3h",
+      "flag_low_bp"
+    ]
+  },
+  "time_series": {
+    "saved_separately": "models/timeseries_results.json"
+  },
+  "recommendation": {
+    "saved_separately": "models/recommendation_results.json"
+  },
+  "association_rules": {
+    "saved_separately": "models/association_rules.json"
+  }
+}

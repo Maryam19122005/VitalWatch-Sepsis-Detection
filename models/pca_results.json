@@ -1,0 +1,28 @@
+{
+  "n_components": 2,
+  "variance_explained": {
+    "PC1": 0.1516,
+    "PC2": 0.1389,
+    "total": 0.2905
+  },
+  "components_needed_for_80pct": 14,
+  "components_needed_for_95pct": 19,
+  "pc1_top_features": [
+    "hr",
+    "hr_mean_3h",
+    "hr_mean_6h",
+    "flag_tachy",
+    "resp"
+  ],
+  "pc2_top_features": [
+    "map",
+    "map_mean_3h",
+    "sbp",
+    "sbp_mean_3h",
+    "flag_low_bp"
+  ],
+  "group_separation": {
+    "pc1": 1.0243,
+    "pc2": 0.3544
+  }
+}
