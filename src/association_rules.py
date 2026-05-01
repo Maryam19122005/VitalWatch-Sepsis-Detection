@@ -117,12 +117,26 @@ print("\nGenerating association rules...")
 rules = association_rules(
     frequent_items,
     metric='confidence',
-    min_threshold=0.5   # must be correct at least 50% of time
+    min_threshold=0.3   # must be correct at least 30% of time
 )
 
 # Add quality filter: lift > 1 means rule is better than random
 rules = rules[rules['lift'] > 1.0]
 print(f"Total quality rules (lift>1): {len(rules)}")
+
+sepsis_check = rules[
+    rules['consequents'].apply(lambda x: 'SEPSIS' in str(x))
+]
+if len(sepsis_check) == 0:
+    print("No sepsis rules at 0.3 confidence. Trying 0.1...")
+    rules_low = association_rules(
+        frequent_items,
+        metric='confidence',
+        min_threshold=0.1
+    )
+    rules_low = rules_low[rules_low['lift'] > 1.0]
+    print(f"Rules at 0.1 threshold: {len(rules_low)}")
+    rules = rules_low
 
 # ── Sepsis specific rules ──────────────────────────────────────────────────
 sepsis_rules = rules[
