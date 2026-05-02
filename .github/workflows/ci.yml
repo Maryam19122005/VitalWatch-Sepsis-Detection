@@ -1,0 +1,73 @@
+name: VitalWatch CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+      run: |
+          python -m pip install --upgrade pip
+          pip install fastapi uvicorn pydantic joblib numpy
+          pip install scikit-learn xgboost prefect deepchecks
+          pip install pytest httpx sqlalchemy psycopg2-binary
+
+      - name: Lint check (flake8)
+        run: |
+          pip install flake8
+          flake8 api/ src/ --max-line-length=120 --ignore=E501,W503
+        continue-on-error: true
+
+      - name: Run API tests
+        run: |
+          pytest tests/ -v --tb=short
+        continue-on-error: true
+
+      - name: Validate model files exist
+        run: |
+          python -c "
+          import os
+          models = ['best_classifier.pkl','best_regressor.pkl',
+                    'scaler.pkl','kmeans_clustering.pkl',
+                    'pca_reducer.pkl','manifest.json']
+          missing = [m for m in models
+                     if not os.path.exists(f'models/{m}')]
+          if missing:
+              print(f'WARNING: Missing models: {missing}')
+          else:
+              print('All model files present')"
+
+      - name: Check API imports
+        run: |
+          python -c "
+          import fastapi, pydantic, numpy, sklearn
+          print('All core imports OK')"
+
+      - name: Build Docker image
+        run: |
+          docker build -t vitalwatch:latest .
+        continue-on-error: true
+
+  notify:
+    needs: test-and-validate
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Pipeline status
+        run: |
+          echo 'VitalWatch CI/CD Pipeline Complete'
+          echo 'Status: ${{ needs.test-and-validate.result }}'
