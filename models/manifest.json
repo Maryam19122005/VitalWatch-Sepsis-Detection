@@ -1,6 +1,5 @@
 {
-  "trained_at": "2026-05-02T01:46:54.821856",
-  "pipeline": "prefect/flows.py",
+  "trained_at": "2026-05-02T16:59:54.652982",
   "train_rows": 615868,
   "test_rows": 153968,
   "class_imbalance_ratio": 49,
@@ -47,32 +46,32 @@
         "Medical_Score": 0.6524
       },
       "Random Forest": {
-        "AUROC": 0.7344,
-        "F1": 0.159,
-        "Accuracy": 0.9451,
-        "Sepsis_Recall": 0.2575,
+        "AUROC": 0.7321,
+        "F1": 0.1615,
+        "Accuracy": 0.9458,
+        "Sepsis_Recall": 0.2591,
         "Medical_Score": 0.4483
       },
       "XGBoost": {
-        "AUROC": 0.747,
-        "F1": 0.1244,
-        "Accuracy": 0.8537,
-        "Sepsis_Recall": 0.5156,
-        "Medical_Score": 0.6082
+        "AUROC": 0.7465,
+        "F1": 0.1226,
+        "Accuracy": 0.8532,
+        "Sepsis_Recall": 0.5089,
+        "Medical_Score": 0.6039
       },
       "Gradient Boosting": {
-        "AUROC": 0.7663,
+        "AUROC": 0.7656,
         "F1": 0.1202,
-        "Accuracy": 0.8326,
-        "Sepsis_Recall": 0.5672,
-        "Medical_Score": 0.6468
+        "Accuracy": 0.8331,
+        "Sepsis_Recall": 0.5656,
+        "Medical_Score": 0.6456
       }
     }
   },
   "regression": {
     "target": "next_hour_hr",
     "best_model": "XGBoost",
-    "best_rmse": 6.9009,
+    "best_rmse": 6.9032,
     "all_results": {
       "Ridge Regression": {
         "RMSE": 6.9059,
@@ -80,14 +79,14 @@
         "R2": 0.8364
       },
       "Random Forest": {
-        "RMSE": 7.0087,
-        "MAE": 4.7338,
-        "R2": 0.8315
+        "RMSE": 7.008,
+        "MAE": 4.7332,
+        "R2": 0.8316
       },
       "XGBoost": {
-        "RMSE": 6.9009,
-        "MAE": 4.5961,
-        "R2": 0.8367
+        "RMSE": 6.9032,
+        "MAE": 4.5972,
+        "R2": 0.8366
       }
     }
   },
@@ -116,7 +115,21 @@
       "total": 0.2905
     },
     "components_for_80pct": 14,
-    "components_for_95pct": 19
+    "components_for_95pct": 19,
+    "pc1_top_features": [
+      "hr",
+      "hr_mean_3h",
+      "hr_mean_6h",
+      "flag_tachy",
+      "resp"
+    ],
+    "pc2_top_features": [
+      "map",
+      "map_mean_3h",
+      "sbp",
+      "sbp_mean_3h",
+      "flag_low_bp"
+    ]
   },
   "time_series": {
     "saved_separately": "models/timeseries_results.json"
