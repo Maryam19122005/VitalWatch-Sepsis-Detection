@@ -1,0 +1,7 @@
+services:
+  vitalwatch-api:
+    build: .
+    container_name: vitalwatch_container
+    ports:
+      - "8000:8000"
+    restart: always
