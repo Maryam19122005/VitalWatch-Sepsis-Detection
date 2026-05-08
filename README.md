@@ -310,19 +310,6 @@ Confidence: 54.3% | Lift: 2.17x
 
 ---
 
-## 👥 Team
-
-| Member | Role |
-|--------|------|
-| Maryam Sajjad | ML Engineering, Model Training, FastAPI, Prefect |
-| Ghania Mukhtar | MLOps, Docker, CI/CD, GitHub Actions |
-
-**Course:** AI221 Machine Learning
-**Instructor:** Dr. Ali Imran Sandhu
-**Institute:** GIK Institute of Engineering Sciences and Technology, Topi
-
----
-
 ## 📄 License
 
 This project is submitted as an academic project for AI221 at GIK Institute.
